@@ -7,7 +7,7 @@ you need to have truffle and ganache-cli installed
 ```
 ganache-cli 
 ```
-2) After cloning this repository, go to /contract and try to compile using
+2) After cloning this repository, go to `/contract` and try to compile using
 ```
 truffle compile
 ```
