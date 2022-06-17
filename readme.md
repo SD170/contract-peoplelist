@@ -1,4 +1,4 @@
-A basic solidity contract to add and display peoples with a few fields. 
+A basic solidity contract to add and display people details with a few related fields. 
 ## Installation
 
 you need to have truffle and ganache-cli installed
@@ -11,26 +11,26 @@ ganache-cli
 ```
 truffle compile
 ```
-3) migrate the contract (push the contract to the ETH blockchainm for me local) **only works if ganache-cli is running**
+3) migrate the contract (deploy the contract to the ETH blockchain for me local) **only works if ganache-cli is running**
 ```
 truffle migrate
 ```
 that's all!!
 
-4) If you wanna play with the contract and it's methods you can go to the console
+4) If you wanna play with the contract and its methods you can go to the console
 ```
 truffle console
 ```
 Now you can use:
-To find the address of the contract in etherium blockchain:
+To find the address of the contract in the Ethereum blockchain:
 ```
 People.address
 ```
-To see all the details anout the Perople contract:
+To see all the details about the People contract:
 ```
 People.deployed()
 ```
-To call **addPerson**:
+To call **addPerson()**:
 ```
 People.deployed().then(d=>d.addPerson(web3.utils.toHex("John"), web3.utils.toHex("Doe"), 7))
 ```
